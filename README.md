@@ -1,4 +1,4 @@
-# 🇮🇳 Nagrik Sathi AI
+#  Nagrik Sathi AI
 
 > **AI-Powered Government Scheme & Citizen Service Assistant for India**
 
