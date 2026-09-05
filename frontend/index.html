@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nagrik Sathi AI</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- =====================================================
+         MOBILE MENU BUTTON
+    ====================================================== -->
+
+    <button
+        class="mobileMenu"
+        onclick="toggleSidebar()"
+        aria-label="Open Menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar">
+
+
+        <!-- =================================================
+             HOME BUTTON
+        ================================================== -->
+
+        <div
+            class="home-btn active"
+            id="homeButton"
+            onclick="goHome()">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>Home</span>
+
+        </div>
+
+
+
+
+        <!-- =================================================
+             LOGO SECTION
+        ================================================== -->
+
+        <div class="logo">
+
+            <img
+                src="flag.jpg"
+                alt="Nagrik Sathi AI Logo">
+
+            <h2>
+                Nagrik Sathi AI
+            </h2>
+
+            <p>
+                Government Scheme Guide
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SIDEBAR MENU
+        ================================================== -->
+
+        <div class="menu">
+
+
+            <!-- =============================================
+                 GOVERNMENT SCHEMES
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Government Scheme')">
+
+                <i class="fa-solid fa-landmark"></i>
+
+                <span>
+                    Government Schemes
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 AADHAAR
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Aadhaar')">
+
+                <i class="fa-solid fa-id-card"></i>
+
+                <span>
+                    Aadhaar
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 PASSPORT
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Passport')">
+
+                <i class="fa-solid fa-passport"></i>
+
+                <span>
+                    Passport
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 PAN CARD
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'PAN Card')">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>
+                    PAN Card
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DRIVING LICENCE
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Driving License')">
+
+                <i class="fa-solid fa-car"></i>
+
+                <span>
+                    Driving Licence
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 RATION CARD
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Ration Card')">
+
+                <i class="fa-solid fa-wheat-awn"></i>
+
+                <span>
+                    Ration Card
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 FARMER
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Farmer')">
+
+                <i class="fa-solid fa-tractor"></i>
+
+                <span>
+                    Farmer
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 EDUCATION
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Education')">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <span>
+                    Education
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 HEALTH
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Health')">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <span>
+                    Health
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 JOBS
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Jobs')">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>
+                    Jobs
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 WOMEN
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Women')">
+
+                <i class="fa-solid fa-person-dress"></i>
+
+                <span>
+                    Women
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 SENIOR CITIZEN
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Senior Citizen')">
+
+                <i class="fa-solid fa-person-cane"></i>
+
+                <span>
+                    Senior Citizen
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DISABILITY
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Disability')">
+
+                <i class="fa-solid fa-wheelchair"></i>
+
+                <span>
+                    Disability
+                </span>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 COMPLAINT HELP
+            ============================================== -->
+
+            <div
+                class="service"
+                onclick="selectService(this, 'Complaint')">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <span>
+                    Complaint Help
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- =================================================
+             SIDEBAR FOOTER
+        ================================================== -->
+
+        <div class="sidebar-footer">
+
+            <p>
+                © 2026 Nagrik Sathi AI
+            </p>
+
+            <span>
+                Smart Government Assistant
+            </span>
+
+            <small>
+                Made for Citizens of India
+            </small>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         HOME / AI CHAT PAGE
+    ====================================================== -->
+
+    <main
+        class="main"
+        id="homePage">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="header">
+
+            <h1>
+                Nagrik Sathi AI
+            </h1>
+
+            <p>
+                Your Smart Government Assistant
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             AI GLASS CARD
+        ================================================== -->
+
+        <div class="glass">
+
+
+            <!-- =============================================
+                 STATE + LANGUAGE
+            ============================================== -->
+
+            <div class="row">
+
+
+                <!-- State -->
+
+                <div class="input-group">
+
+                    <label for="state">
+                        Select State / UT
+                    </label>
+
+                    <select id="state">
+
+                        <option value="">
+                            Choose State / UT
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Language -->
+
+                <div class="input-group">
+
+                    <label for="language">
+                        Language
+                    </label>
+
+                    <select id="language">
+
+                        <option value="English">
+                            English
+                        </option>
+
+                        <option value="Assamese">
+                            Assamese
+                        </option>
+
+                        <option value="Bengali">
+                            Bengali
+                        </option>
+
+                        <option value="Gujarati">
+                            Gujarati
+                        </option>
+
+                        <option value="Hindi">
+                            Hindi
+                        </option>
+
+                        <option value="Kannada">
+                            Kannada
+                        </option>
+
+                        <option value="Malayalam">
+                            Malayalam
+                        </option>
+
+                        <option value="Marathi">
+                            Marathi
+                        </option>
+
+                        <option value="Odia">
+                            Odia
+                        </option>
+
+                        <option value="Punjabi">
+                            Punjabi
+                        </option>
+
+                        <option value="Tamil">
+                            Tamil
+                        </option>
+
+                        <option value="Telugu">
+                            Telugu
+                        </option>
+
+                        <option value="Urdu">
+                            Urdu
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 QUESTION BOX
+            ================================================== -->
+
+            <textarea
+                id="question"
+                placeholder="Ask your question..."></textarea>
+
+
+
+            <!-- =================================================
+                 ASK AI BUTTON
+            ================================================== -->
+
+            <button
+                class="search-btn"
+                onclick="askAI()">
+
+                <i class="fa-solid fa-robot"></i>
+
+                Ask Nagrik Sathi AI
+
+            </button>
+
+
+
+            <!-- =================================================
+                 VOICE / ACTION TOOLBAR
+            ================================================== -->
+
+            <div class="buttons">
+
+
+                <button
+                    onclick="voiceInput()">
+
+                    🎤 Speak
+
+                </button>
+
+
+                <button
+                    onclick="stopVoice()">
+
+                    ⏹ Stop
+
+                </button>
+
+
+                <button
+                    onclick="readAnswer()">
+
+                    🔊 Listen
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOADING
+            ================================================== -->
+
+            <div
+                id="loading"
+                class="loading">
+
+
+                <div class="loader"></div>
+
+
+                <p>
+                    Searching Government Information...
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AI RESULT
+            ================================================== -->
+
+            <div
+                id="result"
+                class="result">
+
+
+                <div class="welcome">
+
+                    <h2>
+                        👋 Welcome to Nagrik Sathi AI
+                    </h2>
+
+                    <p>
+                        Ask any Government Scheme or Citizen
+                        Service related question.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 OFFICIAL LINKS
+            ================================================== -->
+
+            <div
+                id="officialLinks"
+                class="official-links">
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESULT ACTION BUTTONS
+            ================================================== -->
+
+            <div class="action-buttons">
+
+                <button
+                    onclick="clearChat()">
+
+                    🗑 Clear
+
+                </button>
+
+
+                <button
+                    onclick="copyAnswer()">
+
+                    <i class="fa-solid fa-copy"></i>
+
+                    Copy
+
+                </button>
+
+
+                <button
+                    onclick="shareWhatsapp()">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp
+
+                </button>
+
+
+                <button
+                    onclick="printAnswer()">
+
+                    <i class="fa-solid fa-print"></i>
+
+                    Print
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         SERVICE DETAILS PAGE
+    ====================================================== -->
+
+    <section
+        class="service-page"
+        id="servicePage"
+        style="display: none;">
+
+
+        <!-- =================================================
+             SERVICE HEADER
+        ================================================== -->
+
+        <div class="service-header">
+
+
+            <button
+                class="back-btn"
+                onclick="goHome()">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </button>
+
+
+            <div class="service-heading">
+
+                <h2 id="serviceTitle">
+                    Government Service
+                </h2>
+
+                <p>
+                    Nagrik Sathi AI
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SERVICE CONTENT
+        ================================================== -->
+
+        <div class="service-body">
+
+
+            <div
+                id="serviceContent">
+
+                <div class="service-loading">
+
+                    Loading information...
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MORE INFORMATION
+        ================================================== -->
+
+        <div class="service-footer">
+
+
+            <button
+                class="more-btn"
+                onclick="loadMoreInfo()">
+
+                More Information
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
