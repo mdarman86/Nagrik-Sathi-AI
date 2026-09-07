@@ -49,7 +49,7 @@ The application uses the **Groq API** with the **Llama 3.3 70B Versatile** model
 
 The Flask backend receives the user's location and question, processes the request, and returns the AI response to the frontend.
 
-# 🇮🇳 Nagrik Sathi AI
+# Nagrik Sathi AI
 
 Nagrik Sathi AI is an AI-powered citizen assistance system designed to help users understand government schemes, services, and other useful public information in a simple way.
 
